@@ -1,0 +1,47 @@
+.intro{
+    background-image:url(images/image3.jpg);
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.intro > button:hover {
+    background-image: linear-gradient(to left, rgb(232 216 216), rgb(88 143 230));
+}
+/*----------------------Part 2---------------------*/
+.item:hover img {
+    transform: translateY(-10%);
+}
+
+.item img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.social{
+    background-color: orangered;
+    opacity: 0;
+    position: relative;
+    top: -10%;
+    border-radius: 0 0 10px 10px;
+}
+
+.item:hover .social{
+    opacity:1;
+}
+
+/*-------------------Part 3-------------------*/
+.images div p {
+    opacity: 0;
+    text-align: center;
+}
+
+.images div:hover p, .images div:hover img{
+    opacity: 1;
+}
